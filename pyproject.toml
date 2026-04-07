@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sejong-ecampus-dl"
+version = "1.0.0"
+description = "세종대학교 eCampus 강의 PDF 일괄 다운로드 CLI"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+]
+
+[project.scripts]
+sejong-dl = "sejong_dl:main"
